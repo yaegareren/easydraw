@@ -13,4 +13,12 @@ const Colors = {
   GRAY: "gray",
 };
 
-export { Colors };
+const MenuItems = {
+  PENCIL: "PENCIL",
+  ERASER: "ERASER",
+  UNDO: "UNDO",
+  REDO: "REDO",
+  DOWNLOAD: "DOWNLOAD",
+};
+
+export { Colors, MenuItems };
