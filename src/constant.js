@@ -11,6 +11,7 @@ const Colors = {
   CORAL: "coral",
   TEAL: "teal",
   GRAY: "gray",
+  WHITE: "white",
 };
 
 const MenuItems = {
