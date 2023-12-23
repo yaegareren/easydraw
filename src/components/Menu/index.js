@@ -15,6 +15,10 @@ const Menu = () => {
   const handleMenuClick = (itemName) => {
     dispatch(menuItemClick(itemName));
   };
+
+  const handleActionItemClick = (itemName) => {
+    dispatch(actionItemClick(itemName));
+  };
   return (
     <div className={styles.menuContainer}>
       <div
@@ -35,19 +39,19 @@ const Menu = () => {
       </div>
       <div
         className={styles.iconWrapper}
-        onClick={() => handleMenuClick(MenuItems.UNDO)}
+        onClick={() => handleActionItemClick(MenuItems.UNDO)}
       >
         <FaArrowRotateLeft className={styles.icon} />
       </div>
       <div
         className={styles.iconWrapper}
-        onClick={() => handleMenuClick(MenuItems.REDO)}
+        onClick={() => handleActionItemClick(MenuItems.REDO)}
       >
         <FaArrowRotateRight className={styles.icon} />
       </div>
       <div
         className={styles.iconWrapper}
-        onClick={() => handleMenuClick(MenuItems.DOWNLOAD)}
+        onClick={() => handleActionItemClick(MenuItems.DOWNLOAD)}
       >
         <FaFileDownload className={styles.icon} />
       </div>
